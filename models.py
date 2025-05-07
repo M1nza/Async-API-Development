@@ -1,6 +1,12 @@
 from pydantic import BaseModel
+from typing import Optional, Dict
 
 class Document(BaseModel):
     id: str
-    type: str  # e.g., "invoice" or "contract"
-    content: dict
+    type: str
+    content: Optional[Dict] = {}
+
+class JobStatus:
+    def __init__(self, status: str, data: Document):
+        self.status = status
+        self.data = data
