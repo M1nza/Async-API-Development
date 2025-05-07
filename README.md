@@ -16,16 +16,7 @@ The application accepts JSON documents (e.g., invoices or contracts), simulates 
 - **FastAPI**
 - **Uvicorn**
 ---
-## Getting Started
-Follow these steps to run the project locally:
-### 1. Clone the repository or create a folder
-```bash
-mkdir async_api_project
-cd async_api_project
 
-    2. Create Files
-    3. Install Dependencies
-    pip install -r requirements.txt
-    4. Run the FastAPI server
-    uvicorn main:app --reload
+
+
 
