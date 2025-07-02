@@ -13,11 +13,6 @@ async def upload_document(doc: Document, background_tasks: BackgroundTasks):
     background_tasks.add_task(process_document, job_id)
     return {"message": "Document received", "job_id": job_id}
 
-@app.get("/process")
-async def simulate_processing():
-    await asyncio.sleep(2)
-    return {"message": "Simulated async processing complete"}
-
 @app.get("/status/{job_id}")
 async def get_status(job_id: str):
     if job_id not in jobs:
