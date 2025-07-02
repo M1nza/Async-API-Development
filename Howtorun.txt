@@ -1,18 +1,1 @@
-## Create and enter project Folder:
-mkdir async_api_project
-cd async_api_project
 
-## Create the files:
-main.py
-models.py
-requirements.txt
-
-## Install the dependencies:
-pip install -r requirements.txt
-
-## Start the server:
-uvicorn main:app --reload
-
-## The FastAPI app will be live at:
-Docs UI: http://127.0.0.1:8000/docs
-Root URL: http://127.0.0.1:8000
