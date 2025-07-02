@@ -3,7 +3,7 @@ import requests
 import time
 
 # Change this to your actual deployed backend API
-API_BASE = "https://async-api-backend.onrender.com"
+API_BASE = "https://async-api-development.onrender.com"
 
 st.title("📄 Async Document Processor (Frontend)")
 
