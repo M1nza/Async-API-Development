@@ -10,3 +10,4 @@ class JobStatus:
     def __init__(self, status: str, data: Document):
         self.status = status
         self.data = data
+
